@@ -1,0 +1,90 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eaeaea;
+    margin: 0;
+}
+
+/* Calculator Container */
+.calculator {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px 20px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+/* Heading Style */
+.calculator h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* Display Styling */
+#display {
+    width: calc(100% - 20px);
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Button Row */
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+/* Button Styling */
+.btn, #clear, #equal {
+    width: 65px;
+    height: 65px;
+    font-size: 22px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Hover and Active Effects */
+.btn:hover, #clear:hover, #equal:hover {
+    background-color: #ddd;
+}
+
+.btn:active, #clear:active, #equal:active {
+    background-color: #bbb;
+    transform: translateY(2px);
+}
+
+/* Clear and Equal Button Styling */
+#clear, #equal {
+    background-color: #f54242;
+    color: white;
+    flex-grow: 1;
+}
+
+#clear:hover, #equal:hover {
+    background-color: #d03535;
+}
+
+#clear:active, #equal:active {
+    background-color: #b02e2e;
+}
